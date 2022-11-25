@@ -1,0 +1,18 @@
+from movie_reviews import Review, MovieReviews
+
+
+TXT = """
+    "A rating of ""1"" does not begin to express how dull, depressing and relentlessly bad this movie is."
+"This movie is so bad it's almost good. Bad story, bad acting, bad music, you name it. O.K., who are the jokers that gave this flick a '10'?"
+If you've ever had a mad week-end out with your mates then you'll appreciate this film. Excellent fun and a laugh a minute.
+I thought this was a quiet good movie. It was fun to watch it. What I liked best where the 'Outtakes' at the end of the movie. They were GREAT.
+"Great story, great music. A heartwarming love story that's beautiful to watch and delightful to listen to. Too bad there is no soundtrack CD."
+Adrian Pasdar is excellent is this film. He makes a fascinating woman.
+"An unfunny, unworthy picture which is an undeserving end to Peter Sellers' career. It is a pity this movie was ever made."
+"""
+
+
+review = Review(0,TXT,[],[])
+reviews = MovieReviews("reviews.txt","words.txt")
+print(reviews[0].txt)
+print(len(reviews[0].txt))
